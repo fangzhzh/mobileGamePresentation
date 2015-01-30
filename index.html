@@ -57,113 +57,159 @@
 				<section>
 					<h2>Mobile game market</h2>
 					<a href="#/2" class="image">
-						<img  src="images/market_share.png" alt="Director">
-                        // todo: remove tablet thing.
+						<img  src="images/market_share.png">
 					</a>
 				</section>
-                <section>
-                    // todo: flappy bird
-                </section>
-                <section>
-                    // todo: plant vs zombie
-                </section>
+
                 <section data-markdown>
-## basic concepts
-- Types of mobile game
-- Scenes
-- Director
-- Layers
-- Sprites
-                </section>
-				<section data-markdown>
-## Types of mobile game                    
+## Types of mobile game
 - Action
 - Action-adventure
-- Adventure 
+- Adventure
 - Role-playing
 - Simulation
 - Strategy
 - Sports
 - Casual gaming
 - ...
-				</section>
+                </section>
+                <section>
+                    <img src="images/the-mobile-games-landscape-6-638.jpg">
+                </section>
+                <section>
+                    <h3>flappy bird</h3>
+                    <ul>
+                    <li>$50,000 revenue per day</li>
+                    <li>50 million total download</li>
+                    <li>#1 game on App Store and Google Play Store for a month</li>
+                    </ul>
+                    <a class="image">
+                        <img  src="images/flappy_bird.jpg" width="50%" height="50%">
+                    </a>
+                </section>
+                <section>
+                    <h3>plant vs zombie 1</h3>
+                    <ul>
+                        <li>$1M after 10 days of release</li>
+                        <li>$100M total in 2010</li>
+                    </ul>
+                    <ul>
+                    </ul>
+                    <a class="image">
+                        <img  src="images/plantsvszombies.jpg" width="50%" height="50%">
+                    </a>
+                </section>
+                <section>
+                    <h2> can I do that?</h2>
+                </section>
+                <section>
+                    <section>
+                        <h2>past</h2>
+                        <img src="images/many_peoples.png">
+                    </section>
+                    <section>
+                        <h2>right now</h2>
+                        <img src="images/people1.png">
+                    </section>
+                </section>
+                <section>
+                    <a class="image">
+                        <img  src="images/keep-calm-and-lets-get-started-8.png" >
+                    </a>
+                </section>
+                <section data-markdown>
+## basic concepts
+- Scenes
+- Director
+- Layers
+- Sprites
+                </section>
+
                 <section>
 					<h2>Basic concepts : Scenes</h2>
-                    //todo replace by my scenes
-						<a href="#/2" class="image">
-							<img width="300" height="400" src="images/scene1.jpg" alt="Scenes">
+                    <section>
+						<a class="image">
+							<img src="images/scene1.png" alt="Scenes">
 						</a>
+                    </section>
+                    <section>
 						<a href="#/2" class="image">
-							<img width="300" height="400" src="images/scene3.jpeg" alt="Scenes">
+							<img src="images/scene2.png" alt="Scenes">
 						</a>
-						<a href="#/2" class="image">
-							<img width="300" height="400" src="images/scene2.jpg" alt="Scenes">
-						</a>
+                    </section>
+                    <section>
+							<img src="images/scene3.png" alt="Scenes">
+                    </section>
                 </section>
                 <section>
-                    //todo replace by my scenes
+                    <section>
                 	<h2>Basic concepts : Director</h2>
-                	<a href="#/2" class="image">
-							<img width="800" height="600" src="images/ccdirector.jpg" alt="Director">
-					</a>
+                        <h3>push scene</h3>
+							<img width="800" height="600" src="images/push_scene.png" alt="Director">
+                    </section>
+                    <section>
+                        <h2>Basic concepts : Director</h2>
+                        <h3>replace scene</h3>
+                        <img width="800" height="600" src="images/scene2.png" alt="Director">
+                    </section>
                 </section>
                 <section>
-                    //todo replace by my scenes, rename menu to control
 					<h2>Basic concepts : Layers</h2>
-						<a href="#/2" class="image">
-							<img width="800" height="238" src="images/layers.png" alt="Layers">
-						</a>
+                        <img src="images/layers.png" alt="Layers">
                 </section>
                 <section>
-                    //todo replace by my scenes,
-					<h2>Basic concepts : Whole picture</h2>
-						<a href="#/2" class="image">
-							<img width="800" height="600" src="images/ccdirector-hierarchy.png" alt="Layers">
-						</a>
+                    <h2>Basic concepts : Sprites</h2>
+
+                    <img src="images/card_dragonfruit.png" alt="static">
+                    vs
+                    <img src="images/dragon.gif" alt="animation">
+
+                </section>
+                <section>
+                    <a href="#/2" class="image">
+                        <img width="800" height="600" src="images/ccdirector-hierarchy.png" alt="Layers">
+                    </a>
                 </section>
                 <section>
                     <h2>Basic Concepts in demo </h2>
-                    // picture from game
+                    <img src="images/store_scene.png" alt="Scenes">
                 </section>
                 <section>
-                    // removed maybe
-					<h2>Done</h2>
-						<a href="#/2" class="image">
-							<img width="600" height="600" src="images/Deal_With_It.jpg" alt="Layers">
-						</a>
-                </section>
-                <section>
-							<h1>This is not a game</h1>
 							<h3>Where is the animation?</h3>
 							<a class="test" href="http://cornify.com">
 								<img width="280" height="326" src="images/wtf1.jpg" alt="Unicorn">
 							</a>
 				</section>
                 <section data-markdown>
-## make it run
 - Timer
 - Animation
-- Particle
                 </section>
                 <section>
+                    <section>
 					<h2>Timer</h2>
-                    // remove line
                    <pre><code data-trim>
-int main()
+-(void)update:(ccTime)dt
 {
-// rola, run
+    monsters.attack();
+    towers.defence();
 }
-
-                       // picture about running game
                     </code></pre>
+                    </section>
+                    <h2>Timer</h2>
+                    <section>
+                        <img src="images/gaming.gif" alt="Scenes">
+                    </section>
                 </section>
+
                 <section>
+                    <section>
 					<h2>Animation</h2>
-						<a href="#/2" class="image">
-							<img width="800" height="600" src="http://media.giphy.com/media/iJfk9hNalFf0Y/giphy.gif" alt="Layers">
-						</a>
-                        <aside class="notes">
-                        </aside>
+                            <img src="images/j38.png">
+                    </section>
+                    <section>
+                        <h2>Animation</h2>
+                            <img src="images/dragon.gif" alt="animation">
+                </section>
                 </section>
                	<section>
                		<section>
@@ -171,18 +217,14 @@ int main()
 					</section>
                		<section>
                			<h2>how this shit makes money </h2>
-							<a class="test" href="http://cornify.com">
-								<img width="300" height="400" src="images/makemoney.jpg" alt="Unicorn">
-							</a>
-							<a class="test" href="http://cornify.com">
-								<img width="300" height="400" src="images/money.jpg" alt="Unicorn">
-							</a>
+								<img width="50%" src="images/makemoney.jpg" alt="Unicorn">
+								<img src="images/money.jpg" alt="Unicorn">
 					</section>
                	</section>
                 <section>
 					<h1>Paid App or In Application Purchase?</h1>
 					<h3>It's a problem</h3>
-                    // todo picture
+
                 </section>
 				<section>
 					<h3>Paid App or In Application Purchase?</h3>
@@ -198,18 +240,17 @@ int main()
 				</section>
 				<section>
 					<h1>Google IAP</h1>
-					<img  width = "450" src="images/google-play-logo-640x405.jpg" alt="Unicorn">
-					<img  width = "40" src="images/google-iap.png" alt="Unicorn">
+					<img   width="40%" src="images/google-play-logo-640x405.jpg">
+					<img   width="50%" src="images/google-iap.png">
 
 				</section>
                 <section data-markdown>
 					<script type="text/template">
-						## tools
-						- TexturePacker(animation)
-						- Tiled(map)
-						- SpriteBuilder(scene)
-						- Chipmunk(physics) // todo video
-
+## tools
+- TexturePacker(animation)
+- Tiled(map)
+- SpriteBuilder(scene)
+- Chipmunk(physics)[![Chipmunk(physics)](http://img.youtube.com/vi/uZRSr3DgYGU/0.jpg)](https://www.youtube.com/watch?v=uZRSr3DgYGU)
                     </script>
                 </section>
 
